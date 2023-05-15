@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+	<title>Luna moth</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css" >
+  </head>
+
+  <body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#info">Informacje podstawowe</a>
+        <a href="#galeria">Galeria</a>
+    </div>
+    
+	<div id="main">
+		<div id="home">
+			<img id="home-img" src="Images/background_home.png" alt="background">
+		</div>
+        
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="#home">Home</a>
+			<a href="#info">Informacje podstawowe</a>
+			<a href="#galeria">Galeria</a>
+		</div>
+		
+		<div class="nav-left">
+			<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+		</div>
+		<hr>
+		<div id="info" class="container">
+			<div id="moth-div">
+				<img id="moth1" src="Images/moth1.jpg" alt="moth1.jpg">
+			</div>
+			<div id="info-div">
+				<h1>Podstawowe informacje</h1>
+				<p>
+					<b>Luna moth (Actias luna)</b>, zwana księżycówką amerykańską, ćma występująca na terenie Pólnocnej Ameryki z rodziny Pawicowatych.<br>
+					Dorosłe osobniki posiadają zielono-limonkowe skrzydła o rozpiętości od 8 do nawet 12 cm. <br>
+					Na każdym z nich znajduje się plama imitująca oczy zwierzęcia - mają one odstraszyć potenjalnych drapieżników. <br>
+					Bardzo charakterystyczne są długie końcówki tylynch skrzydeł. <br>
+					Formy dorosłe (motyle) mają uwstecznione narządy gębowe i nie są zdolne do pobierania pokarmu żyją więc około tygodnia.
+				</p>
+			</div>
+		</div>
+		<hr>
+		<div id="galeria" class="container">
+			<h2>Galeria</h2>
+				<div id="image-gallery">
+					<img id="current-image" src="Images/galeria/a1.jpg" alt="zdj1">
+						<div id="image-thumbs"></div>
+				</div>
+		</div>
+	</div>
+
+	<footer>
+	  <p>© 2023, Mateusz Łabędź. All rights reserved.</p>
+	</footer>
+	<script>
+		function openNav() {
+		document.getElementById("mySidenav").style.width = "250px";
+		}
+
+		function closeNav() {
+		document.getElementById("mySidenav").style.width = "0";
+		} 
+	</script>
+	<script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,173 @@
+* {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-image: linear-gradient(#2e6136, #17321b);
+    font-family: 'Lato', sans-serif;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+.navbar a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+/* #main */
+
+
+#home {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#home-img {
+	width: 100%;
+	height: 100%;
+}
+
+.nav-left {
+	overflow: hidden;
+    background-color: transparent;
+    position: fixed;
+    top: 50%;
+    width: 3%;
+}
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: black; 
+	overflow-x: hidden; 
+	padding-top: 60px;
+	transition: 0.5s;
+}
+
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidenav a:hover {
+	color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+#info {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+#moth1 {
+	border-radius: 50%;
+}
+
+
+.container {
+	margin-bottom: 2rem;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 30px;
+
+}
+hr {
+	width: 80%;
+	border-top: 1px solid rgba(250, 250, 250, 0.5);
+	margin-bottom: 30px;
+  }
+
+#image-gallery {
+	width: 600px;
+	margin: 0 auto;
+}
+
+#current-image {
+	width: 100%;
+}
+
+#image-thumbs {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.thumb {
+	width: 80px;
+	height: 80px;
+	object-fit: cover;
+	margin-right: 10px;
+	cursor: pointer;
+}
+h2 {
+	font-size: 36px;
+	text-align: center;
+}
+
+footer {
+	background-color: #2e6136;
+	width: 80%;
+	border-radius: 5px;
+	text-align: right;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+	* {
+		box-sizing: border-box;
+	}
+	
+	body {
+		padding: 0;
+		margin: 0;
+	}
+	.nav-left {
+		display: none;
+	}
+	
+	.nav-bar {
+		margin-right: 0;
+		margin-left: .5rem;
+	}
+	
+	.nav-bar a {
+		padding-right: 0;
+	}
+}
